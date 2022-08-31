@@ -1,5 +1,4 @@
 import logging
-import os
 
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters
 
@@ -12,7 +11,7 @@ from commands.help import help
 from commands.word import word
 from commands.image import image
 
-TOKEN = os.getenv("TOKEN")
+TOKEN = "YOUR_TOKEN" # Telegram bot token
 
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
